@@ -1,5 +1,10 @@
 <?php
 require "config/Conexion.php";
+
+header("Access-Control-Allow-Origin: *");
+header("Access-Control-Allow-Methods: GET, POST, OPTIONS, DELETE");
+header("Access-Control-Allow-Headers: Content-Type");
+
 $raw_data = file_get_contents("php://input");
 $datos = json_decode($raw_data, true);
   //print_r($_SERVER['REQUEST_METHOD']);
@@ -134,7 +139,8 @@ $datos = json_decode($raw_data, true);
     case 'DELETE':
       if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
         // Procesar solicitud DELETE
-        $id = $datos['id'];
+        $id = $_GET['id'];
+        //$id = $datos['id'];
         $sql = "DELETE FROM notas WHERE id = $id";
     
         if ($conexion->query($sql) === TRUE) {

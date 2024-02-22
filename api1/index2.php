@@ -21,7 +21,7 @@
         document.getElementById('deleteButton').addEventListener('click', function () {
             var id_mae = document.getElementById('id_mae').value;
 
-            fetch('method.php?id_mae=' + id_mae, {
+            fetch('method.php?id=' + id_mae, {
                 method: 'DELETE'
             })
             .then(function(response) {
