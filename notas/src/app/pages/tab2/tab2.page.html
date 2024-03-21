@@ -1,0 +1,65 @@
+<!-- tab2.page.html -->
+
+<ion-content [fullscreen]="true">
+  <div class="cont">
+    <ion-grid>
+      <ion-title size="large">Mi <br> Cheklist</ion-title>
+      <ion-button class="login" href="/login">
+        <ion-icon aria-hidden="true" name="person"></ion-icon>
+      </ion-button> 
+      <ion-row>
+        <ion-col class="cont_notas" *ngFor="let item of resp">
+          <ion-card class="notas">
+            <ion-card-content class="contenido" >
+              <!--ion-button (click)="item.id !== undefined && eliminarDato(item.id)" shape="round-10" fill="clear"> <ion-icon slot="icon-only"  name="trash-outline"></ion-icon></ion-button-->
+              <input type="checkbox" name="" id="">
+              <p class="titulo">{{ item.titulo }}</p>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+      <!-- Comentario: Mantén este código para tu formulario si lo necesitas -->
+
+
+
+      <ion-modal trigger="open-modal" [initialBreakpoint]="1" [breakpoints]="[0, 1]">
+        <ng-template>
+          <div class="block">
+            <div class="recordatorio">
+              <label class="checkbox-container">
+                <input type="checkbox">
+                <span class="checkmark"></span>
+              </label>
+              <textarea [(ngModel)]="titulo" id="myTextarea" rows="6" placeholder="Escribe aquí..."></textarea>
+            </div>
+            <a (click)="enviarDatos()">Listo</a>
+          </div>
+        </ng-template>
+      </ion-modal>
+
+      <!-- <ion-item>
+        <ion-label position="floating">Titulo</ion-label>
+        <ion-input type="text" [(ngModel)]="titulo"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Cuerpo</ion-label>
+        <ion-input type="text" [(ngModel)]="cuerpo"></ion-input>
+      </ion-item>
+      <ion-button expand="block" (click)="enviarDatos()">Enviar</ion-button> -->
+
+      <!-- Agrega el siguiente botón para abrir el modal -->
+
+      <a id="open-modal" expand="block" class="button_notas"><ion-icon name="add"></ion-icon></a>
+    </ion-grid>
+  </div>
+</ion-content>
+
+<script>
+  // Asegúrate de que el texto no crezca más allá de 6 filas
+document.getElementById('myTextarea').addEventListener('input', function () {
+  if (this.scrollHeight > this.clientHeight) {
+    this.rows += 1;
+  }
+});
+
+</script>

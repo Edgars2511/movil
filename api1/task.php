@@ -11,13 +11,7 @@ $datos = json_decode($raw_data, true);
   switch($_SERVER['REQUEST_METHOD']) {
     case 'GET':
         // Consulta SQL para seleccionar datos de la tabla
-        if (isset($_GET['id'])) {
-            $sql = "SELECT * FROM notas ORDER BY id DESC LIMIT 5";
-        }
-        else {
-            $sql = "SELECT * FROM notas";
-        }
-        
+        $sql = "SELECT * FROM tasks";
 
         $query = $conexion->query($sql);
 
@@ -41,11 +35,11 @@ $datos = json_decode($raw_data, true);
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             // Recibir los datos del formulario HTML
             $titulo = $datos['titulo'];
-            $cuerpo = $datos['cuerpo'];
+        
         
         
             // Insertar los datos en la tabla
-            $sql = "INSERT INTO notas (titulo, cuerpo) VALUES ('$titulo', '$cuerpo')"; // Reemplaza con el nombre de tu tabla
+            $sql = "INSERT INTO tasks (titulo) VALUES ('$titulo')"; // Reemplaza con el nombre de tu tabla
         
             if ($conexion->query($sql) === TRUE) {
                 echo "Datos insertados con éxito.";
@@ -146,8 +140,7 @@ $datos = json_decode($raw_data, true);
       if ($_SERVER['REQUEST_METHOD'] === 'DELETE') {
         // Procesar solicitud DELETE
         $id = $_GET['id'];
-        //$id = $datos['id'];
-        $sql = "DELETE FROM notas WHERE id = $id";
+        $sql = "DELETE FROM tasks WHERE id = $id";
     
         if ($conexion->query($sql) === TRUE) {
             echo "Registro eliminado con éxito.";

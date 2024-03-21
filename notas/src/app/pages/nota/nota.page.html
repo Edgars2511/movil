@@ -1,0 +1,16 @@
+<ion-content [fullscreen]="true">
+  <div class="cont">
+    <div class="iconos">
+      <a class="back" href="/tabs/tab1"> <ion-icon name="arrow-back"></ion-icon> </a>
+      <a class="enviar" expand="block" (click)="enviarDatos()"><ion-icon name="checkmark"></ion-icon></a>
+    </div>
+
+    <ion-grid>
+      <!--ion-title size="large">Mi <br> Cheklist</ion-title-->
+    
+      <input placeholder="Titulo" type="text" [(ngModel)]="titulo">
+      <textarea placeholder="Cuerpo Hermana Cuerpo" type="text" [(ngModel)]="cuerpo"></textarea>
+      
+    </ion-grid>
+  </div>
+</ion-content>
