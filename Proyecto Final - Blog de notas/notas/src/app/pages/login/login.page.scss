@@ -1,0 +1,80 @@
+.cont{
+    background-color: #F6ECC9;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cont .header{
+    margin-bottom: auto;
+    padding: 1.5rem;
+    padding-top: 1rem;
+}
+.cont .header .iconos{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+.cont .header .iconos .back{
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.cont .header .iconos .enviar{
+    font-size: 1.1rem;
+    color: #000;
+    text-decoration: none;
+}
+.cont .header ion-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    padding: 0;
+    font-weight: normal;
+    line-height: 4rem
+} 
+
+
+.cont .form{
+    background-color: white;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    bottom: 0px;
+    position: absolute;
+    padding: 1.2rem;
+    padding-top: 2.5rem;
+    height: 60vh;
+}
+
+.cont .form a{
+    float: right;
+    margin-bottom: 1rem;
+}
+
+input[type="email"], input[type="password"]{
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 1rem;
+    padding: 1.2rem;
+    border: none;
+    background-color: #eeeeee;
+    outline: none;
+    font-size: 1.2rem;
+}
+
+input[type="submit"]{
+    width: 100%;
+    border-radius: 50px;
+    margin-bottom: 5px;
+    padding: 1.2rem;
+    border: none;
+    background-color: #171717;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bolder;
+}
+
+  

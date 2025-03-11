@@ -1,0 +1,22 @@
+.alinear_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.align_name_icon{
+    display: flex;
+    font-size: 18px;
+    margin: 2px;
+    align-items: center;
+}
+
+.align_btns{
+    padding-left: 85px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: space-between;
+}
+

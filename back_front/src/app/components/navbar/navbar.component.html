@@ -1,0 +1,18 @@
+<div>
+  <div class="alinear_nav">
+    <div class="align_name_icon">
+      <img src="../../assets/img/logo.png" width="35px" height="35px" style="margin: 5px;">
+      <h4>Gaming shop</h4>
+    </div>
+    <div class="align_btns">
+      <ng-container *ngIf="userEmail; else loginRegisterButtons">
+        <span>{{ userEmail }}</span>
+      </ng-container>
+      <ng-template #loginRegisterButtons>
+        <a href="/login" class="login_icon">
+          <ion-icon name="log-in-outline" style="color: white;" size="large"></ion-icon>
+        </a>
+      </ng-template>
+    </div>
+  </div>
+</div>

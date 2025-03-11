@@ -1,0 +1,225 @@
+/*ion-content {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}*/
+ion-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+  
+    padding: 0;
+    font-weight: normal;
+    line-height: 4rem
+} 
+.cont {
+    background-color: #F6ECC9;
+    min-height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.cont_tasks{
+    min-width: 100%;
+    padding: 0;
+}
+.cont_tasks .tasks{
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.cont_tasks .tasks .contenido{
+    display: flex;
+}
+.cont_tasks .tasks .contenido input{
+    margin-right: 0.8rem;
+    font-size: 2rem;
+}
+.cont_tasks .tasks .contenido .titulo{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: black;
+}
+
+
+.button_notas{
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2rem;
+    width: 2rem;
+    border-radius: 100rem;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+}
+.button_notas ion-icon{
+    color: white;
+    font-size: 1.5rem;
+}
+
+
+.user{
+  background:none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0rem;
+  right: 1rem;
+  padding-top: 1rem;
+  width: auto;
+}
+.user ion-icon{
+  color: black;
+  font-size: 2rem;
+}
+
+.logout{
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 5.5rem;
+  border-radius: 100rem;
+}
+
+/* popover.component.scss */
+
+ion-popover {
+  --backdrop-opacity: 0; /* Establecer la opacidad del fondo a 0 para que no haya fondo */
+  --background: none; /* Eliminar el fondo */
+  --box-shadow: none; /* Eliminar la sombra */
+  --width: 6rem; /* Establecer el ancho deseado */
+  --border-radius: 0; /* Opcional: quitar el radio de borde */
+}
+
+
+
+.block {
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  
+ion-modal {
+    --height: auto;
+    
+}
+
+
+.block .recordatorio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+
+}
+.block .recordatorio textarea{
+   border: none;
+   font-size: 1.2rem;
+}
+.block .recordatorio input{
+    margin-right: 1rem;
+    font-size: 2rem;
+}
+
+.block a{
+    background-color: #171717;
+    color: white;
+    border-radius: 5px;
+    padding: 1rem;
+}
+/* Estilo base del checkbox */
+.checkbox-container {
+  display: inline-block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 22px;
+}
+
+.checkbox-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Estilo del tick (checkmark) */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  border-radius: 5px;
+  border: 1px solid rgb(77, 77, 77);
+}
+
+/* Estilo cuando el checkbox está marcado */
+.checkbox-container input:checked ~ .checkmark {
+  background-color: #2196F3;
+  border: none;
+}
+
+/* Estilo del tick (checkmark) en forma de "V" */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox-container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Estilo del tick (checkmark) en forma de "V" */
+.checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+ 
+
+textarea {
+    width: 300px; /* Ancho predeterminado */
+    min-height: 20px; /* Altura mínima */
+    resize: none; /* Evita que se pueda cambiar el tamaño manualmente */
+    border: 1px solid #ccc; /* Borde por defecto */
+    transition: border-color 0.3s; /* Transición para el cambio de color del borde */
+    box-sizing: border-box; /* Incluye el tamaño del borde en el ancho y alto total */
+    overflow-y: hidden; /* Oculta el desbordamiento vertical */
+  }
+  
+  /* Cambia el borde al hacer hover */
+  textarea:hover {
+    border-color: transparent;
+  }
+  
+  /* Ajusta dinámicamente la altura del textarea en función del contenido */
+  textarea {
+    height: auto;
+    transition: height 0.2s;
+  }
+  
+  textarea:focus {
+    outline: none; /* Quita el contorno al enfocar */
+  }
+  
+  /* Limita el tamaño máximo a 6 filas */
+  textarea[rows="6"] {
+    overflow-y: auto;
+  }
+  

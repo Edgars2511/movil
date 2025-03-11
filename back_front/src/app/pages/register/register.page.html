@@ -1,0 +1,40 @@
+<div class="contenedor_registro">
+  <div class="grid">
+    <div class="row justify-content-center">
+      <div class="col">
+        <div class="card">
+          <div class="titulo_aling">
+            <img src="../../../assets//img/logo.png" width="100px" height="auto">
+            <h1>Gaming Shop</h1>
+          </div>
+          <div class="card-header">
+            <h1>Registro</h1>
+          </div>
+          <div class="card-content">
+            <form class="form_login" (ngSubmit)="signup()">
+              <div class="item">
+                <label for="name" position="floating">Nombre de usuario</label>
+                <input type="text" [(ngModel)]='name' id="name" name="name" required>
+              </div>
+              <div class="item">
+                <label for="email" position="floating">Correo electrónico</label>
+                <input type="email" [(ngModel)]='email' id="email" name="email" required>
+              </div>
+              <div class="item">
+                <label for="password" position="floating">Contraseña</label>
+                <input type="password" [(ngModel)]='password' id="password" name="password" required>
+              </div>
+              <!-- <div class="item"> -->
+                <!-- <label for="repeatPassword" position="floating">Repetir contraseña</label> -->
+                <!-- <input type="password" [(ngModel)]='repeatPassword' id="repeatPassword" name="repeatPassword" required> -->
+              <!-- </div> -->
+              <button type="submit" (click)="signup()" class="iniciar_sesion">
+                Registrate
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,47 @@
+<ion-content class="login-content" fullscreen="true">
+  <div class="login-container">
+    <div class="header">
+      <ion-row class="iconos">
+        <ion-col size="auto">
+          <a class="back" routerLink="/tabs/tab1">
+            <ion-icon name="arrow-back"></ion-icon>
+          </a>
+        </ion-col>
+        <ion-col size="auto">
+          <a class="enviar" routerLink="/register">Registro</a>
+        </ion-col>
+      </ion-row>
+      <ion-title size="large">Iniciar Sesión</ion-title>
+    </div>
+    <form class="form" (ngSubmit)="login()">
+      <ion-grid>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Email</ion-label>
+              <ion-input type="email" name="email" [(ngModel)]="correo" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-item>
+              <ion-label position="floating">Contraseña</ion-label>
+              <ion-input type="password" name="password" [(ngModel)]="contrasena" required></ion-input>
+            </ion-item>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col class="forgot-contrasena">
+            <a>¿Olvidaste tu Contraseña?</a>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <ion-button type="submit" expand="block" color="primary">Entrar</ion-button>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </form>
+  </div>
+</ion-content>

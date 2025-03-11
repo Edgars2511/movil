@@ -1,0 +1,36 @@
+<ion-content [fullscreen]="true">
+<div class="cont">
+  <ion-grid>
+
+  
+    <ion-title size="large">My <br> Perfil</ion-title>
+    <ion-row>
+      
+      <div class="usuario">
+        <div class="personas">
+          <ion-icon id="person" name="person"></ion-icon>
+          <h1 id="nombre_user" >{{ nombre_user }}</h1>
+        </div>
+        <a id="open-modal">
+          <ion-icon id="pencil" name="pencil"></ion-icon>
+        </a>
+        
+      </div>
+
+      <button (click)="logout()">Cerrar Sesion</button>
+    </ion-row>
+  </ion-grid>
+</div>
+</ion-content>
+
+
+  <ion-modal #modal class="modalUser" trigger="open-modal">
+    <ng-template>
+      <div>
+        <label for="usuario">Usuario</label>
+        <br>
+        <input [(ngModel)]="updatedUser">
+        <button (click)="updateUser()">Guardar</button>
+      </div>
+    </ng-template>
+  </ion-modal>

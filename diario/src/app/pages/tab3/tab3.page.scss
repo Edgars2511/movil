@@ -1,0 +1,88 @@
+ion-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    
+    padding: 0;
+    font-weight: normal;
+    line-height: 4rem
+}
+
+.cont {
+    background-color: #2a2a2a;
+    min-height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+}
+
+.cont .usuario{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+.personas{
+    display: flex;
+    align-items: center;
+}
+.cont .usuario h1{
+    width: auto;
+
+}
+.cont .usuario #person{
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    justify-self: right;
+}
+.cont .usuario #pencil{
+    font-size: 1.8rem;
+    justify-self: right;
+}
+
+button{
+    margin-top: 2rem;
+    height: 3rem;
+    width: 100%;
+    background-color: #750E21;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 10rem;
+
+}
+ion-modal div{
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+ion-modal label{
+    justify-self: left;
+    font-size: 1.8rem;
+    
+}
+ion-modal input{
+    margin-top: 0.5rem;
+    width: 100%;
+    padding: 0.8rem;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    line-height: 2.5rem;
+    font-size: 1.2rem;
+    border: 1px solid #750E21;
+    border-radius: 5rem;
+    background: none;
+    height: auto;
+    transition: height 0.2s;
+}
+
+input:hover {
+    border-color: transparent;
+}
+  
+  
+input:focus {
+    outline: none; /* Quita el contorno al enfocar */
+}

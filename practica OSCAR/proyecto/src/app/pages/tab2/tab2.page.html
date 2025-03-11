@@ -1,0 +1,38 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Registro de rutinas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Registro de rutinas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-card>
+    <ion-card-header>
+      <ion-card-title>Detalles de Rutina</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Nombre de rutina</ion-label>
+        <ion-input type="text" [(ngModel)]="nombre_rutina"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Progreso</ion-label>
+        <ion-input type="text" [(ngModel)]="progreso"></ion-input>
+      </ion-item>
+      
+      <ion-item>
+        <ion-label position="floating">Objetivos</ion-label>
+        <ion-input type="text" [(ngModel)]="objetivos"></ion-input>
+      </ion-item>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="block" (click)="enviarDatos()">Enviar</ion-button>
+</ion-content>

@@ -1,0 +1,12 @@
+<ion-row class="form" justify-content-center  (ngSubmit)="signup()">
+  <ion-grid class="login" >
+    <input type="email" placeholder="name" [(ngModel)]='nombre' id="nombre" name="name" required>
+    <input type="email" placeholder="email"  name="user" [(ngModel)]='correo'>
+    <input type="contrasena" placeholder="contrasena" name="contrasena" [(ngModel)]='contrasena'>
+
+    <a>¿Olvidaste tu Contraseña?</a>
+
+    <input type="submit" value="Entrar" (click)="signup()">
+          
+  </ion-grid>
+</ion-row>

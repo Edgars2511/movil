@@ -1,0 +1,10 @@
+<div class="block">
+  <div class="recordatorio">
+    <label class="checkbox-container">
+      <input type="checkbox">
+      <span class="checkmark"></span>
+    </label>
+    <textarea id="myTextarea" rows="6" placeholder="Escribe aquí..." [(ngModel)]="updatedTitle"></textarea>
+  </div>
+  <a (click)="updateTaskTitle()">Listo</a>
+</div>

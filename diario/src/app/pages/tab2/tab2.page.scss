@@ -1,0 +1,57 @@
+.cont {
+    background-color: #2a2a2a;
+    min-height: 94vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+}
+.cont .guardar{
+    color: #191919;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.cont .inputs{
+    width: 100%;
+    border-radius: 4rem;
+    background-color: white;
+    padding: 2rem;
+    border: 1px solid #750E21;
+}
+
+input, textarea{
+    border: none;
+    background: none;
+    color: black;
+}
+
+  /* Cambia el borde al hacer hover */
+  textarea:hover {
+    border-color: transparent;
+  }
+  
+  input, textarea {
+    height: auto;
+    transition: height 0.2s;
+  }
+  
+  input, textarea:focus {
+    outline: none; /* Quita el contorno al enfocar */
+  }
+
+input{
+    width: 100%;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+textarea{
+    width: 100%;
+    font-size: 1.2rem;
+    min-height: 60vh; /* Altura mínima inicial */
+    box-sizing: border-box; /* Incluir el relleno y el borde en el ancho y la altura */
+    overflow-y: auto; /* Permitir que el área de texto se desplace verticalmente */
+    resize: none; /* Evitar que el usuario pueda cambiar el tamaño manualmente */
+}

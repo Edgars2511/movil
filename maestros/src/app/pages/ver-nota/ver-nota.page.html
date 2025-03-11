@@ -1,0 +1,19 @@
+<ion-content [fullscreen]="true">
+  <div class="cont">
+    <div class="iconos">
+      <a class="back" (click)="goBack()"> <ion-icon name="arrow-back"></ion-icon> </a>
+      <a class="enviar" expand="block" (click)="updateNotas()"><ion-icon name="checkmark"></ion-icon></a>
+    </div>
+    
+    <div>
+      <h2>{{updatedTitle}}</h2>
+      <textarea id="myTextarea" rows="15" (input)="autoGrow($event.target)" placeholder="Escribe aquí..." [(ngModel)]="updatedCuerpo"></textarea>
+    </div>
+    <!--ion-grid>
+      <form>
+        <input placeholder="Titulo" type="text" [(ngModel)]="updatedTitle">
+        <textarea placeholder="Cuerpo Hermana Cuerpo" type="text" [(ngModel)]="updatedCuerpo"></textarea>
+      </form>
+    </ion-grid-->
+  </div>
+</ion-content>

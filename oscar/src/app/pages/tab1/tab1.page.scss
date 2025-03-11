@@ -1,0 +1,39 @@
+/* Estilos para la pantalla */
+.custom-content {
+    --ion-background-color: #f0f0f0; /* Cambiar el color de fondo de la pantalla */
+  }
+  
+  /* Estilos para los recuadros de las notas */
+  .custom-card {
+    background-color: #fff; /* Cambiar el color de fondo de los recuadros de las notas */
+    margin-bottom: 20px; /* Espacio entre los recuadros */
+    border-radius: 10px; /* Borde redondeado */
+  }
+  
+  /* Estilos para el encabezado de los recuadros de las notas */
+  .custom-card-header {
+    background-color: #007bff; /* Cambiar el color de fondo del encabezado de los recuadros de las notas */
+    color: #fff; /* Color del texto del encabezado */
+  }
+  
+  /* Estilos para el contenido de los recuadros de las notas */
+  .custom-card-content {
+    padding: 16px; /* Espaciado interno */
+  }
+  
+  /* Estilos para los botones */
+  .custom-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #dc3545; /* Cambiar el color de fondo del botón */
+    color: #fff; /* Color del texto del botón */
+    border-radius: 8px; /* Borde redondeado */
+    padding: 10px 20px; /* Espaciado interno */
+  }
+  
+  .custom-button:hover {
+    background-color: #c82333; /* Cambiar el color de fondo del botón al pasar el mouse */
+  }
+  

@@ -1,0 +1,129 @@
+/* Resets default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Main container */
+.contenedor_registro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fff1f4;
+}
+
+/* Grid container */
+.grid {
+  margin: 20px;
+  width: 400px;
+  border-radius: 10px;
+}
+
+/* Card header */
+.card-header {
+  text-align: center;
+  padding: 15px;
+}
+
+.card-header h1 {
+  font-size: 3.5rem;
+  color: #191919;
+  font-weight: bold;
+}
+
+/* Card content */
+.card-content {
+  padding: 20px;
+}
+
+/* Form styling */
+.form_login {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+/* Label styling */
+.item label {
+  display: block;
+  font-size: 16px;
+  font-weight: 500;
+  color: #404764;
+  text-align: center; /* Centra el texto */
+}
+
+/* Input styling */
+
+
+/* Button styling */
+
+
+
+/* Additional styling for elegance */
+.form_login {
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo_aling {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  color: #750E21; /* Cambia el color del texto */
+  position: relative; /* Establece la posición relativa */
+  bottom: 5rem; /* Ajusta la posición vertical */
+}
+
+.titulo_aling h1{
+  font-size: 3rem;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; /* Cambia el tipo de fuente */
+  font-weight: bold;
+}
+
+
+input[type="email"], input[type="password"] {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 0.8rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  line-height: 2.5rem;
+  font-size: 1.2rem;
+  border: 1px solid #750E21;
+  border-radius: 5rem;
+  background: white;
+  height: auto;
+  transition: height 0.2s;
+}
+
+button{
+  margin-top: 1.5rem;
+  height: 3rem;
+  width: 100%;
+  background-color: #750E21;
+  color: white;
+  font-size: 1.4rem;
+  border-radius: 10rem;
+
+}
+button:hover {
+  background-color: #500916;
+}
+
+.registro{
+  margin-top: 1.5rem;
+  color: #191919;
+  font-size: 1.2rem;
+  text-align: center;
+}
+.registro a{
+  color: #191919;
+  font-weight: bold;
+}

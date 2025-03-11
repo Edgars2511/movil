@@ -1,0 +1,9 @@
+<ion-content [fullscreen]="true">
+<div class="cont">
+  <a class="guardar" (click)="enviarDatos()">Guardar</a>
+  <div class="inputs">
+    <input type="text" [(ngModel)]="titulo" placeholder="Titulo">
+    <textarea [(ngModel)]="contenido" placeholder="Cuerpo" (input)="autoGrow($event.target)"></textarea>
+  </div>
+</div>
+</ion-content>

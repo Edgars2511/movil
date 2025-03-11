@@ -1,0 +1,14 @@
+<ion-content [fullscreen]="true">
+  <div class="cont">
+    <div class="iconos">
+      <a class="back" href="/tabs/tab1"> <ion-icon name="arrow-back"></ion-icon> </a>
+      <a class="enviar" expand="block"><ion-icon name="checkmark"></ion-icon></a>
+    </div>
+
+    <ion-grid *ngFor="let item of resp">
+      <input placeholder="Titulo" type="text" value="{{ item.titulo }}">
+      <textarea placeholder="Cuerpo Hermana Cuerpo" type="text">{{ item.contenido }}</textarea>
+      
+    </ion-grid>
+  </div>
+</ion-content>

@@ -1,0 +1,37 @@
+<ion-content [fullscreen]="true">
+<div class="cont">
+  <ion-grid>
+    <ion-title size="large">Diario de <br> {{ nombre_user }}</ion-title>
+
+    <!--ion-button (click)="logout()">Cerrar sesión</ion-button-->
+
+    <ion-row>
+
+      <div class="curved-box"></div>
+      <div class="curved-box">
+        <div class="circle-with-arrow"></div>
+      </div>
+      
+      
+      <ion-col class="cont_diario" *ngFor="let item of resp">
+        <div>
+          <ion-card-content class="contenido" (click)="item.id_entrada !== undefined && showTaskDetail(item.id_entrada)">
+            <p class="titulo">{{ item.titulo }}</p>
+            <p class="fecha">{{ item.creado_en }}</p>
+            <div class="delete">
+              <ion-button (click)="item.id_entrada !== undefined && eliminarDato(item.id_entrada)" shape="round-10" fill="clear">
+                <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+              </ion-button>
+            </div>
+          </ion-card-content>
+          <div class="curved-corner"></div>
+          <div class="circle-arrow">
+            <ion-icon name="arrow-forward-outline"></ion-icon>
+          </div>
+        </div>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</div>
+</ion-content>

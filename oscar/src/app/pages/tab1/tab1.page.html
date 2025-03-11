@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Rutinas</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Rutinas</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col *ngFor="let item of resp">
+        <ion-card>
+          <ion-card-header>
+            <ion-card-title>{{ item.id_rut }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>Id {{ item.id_rut }}</p>
+            <p>Nombre de la rutina {{ item.nombre_rutina }}</p>
+            <p>Progreso {{ item.progreso }}</p>  
+            <p>Objetivos {{ item.objetivos }}</p>  
+            <ion-button (click)="item.id_rut !== undefined && eliminarDato(item.id_rut)" shape="round-10" color="danger" style="display: flex; align-items: center; justify-content: center; text-align: center;"> 
+              <ion-icon slot="icon-only" name="trash-outline"></ion-icon>
+              <span>Eliminar rutina</span>
+            </ion-button>          
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>

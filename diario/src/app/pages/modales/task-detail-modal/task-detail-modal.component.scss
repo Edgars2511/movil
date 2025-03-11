@@ -1,0 +1,77 @@
+.block {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 4rem 2rem;
+  }
+  .block .recordatorio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+  
+  }
+  .block .recordatorio textarea{
+   border: none;
+   font-size: 1.2rem;
+  }
+  .block .recordatorio input{
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  
+  .block a{
+    background-color: #171717;
+    color: white;
+    border-radius: 5px;
+    padding: 1rem;
+    width: 100%;
+  }
+
+  input{
+      width: 100%;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+      border: 1px solid #ccc;
+      font-weight: bold;
+  }
+
+  
+  
+  textarea {
+      font-size: 1.2rem;
+      
+    margin-bottom: 1rem;
+    width: 100%; /* Ancho predeterminado */
+    min-height: 20px; /* Altura mínima */
+    resize: none; /* Evita que se pueda cambiar el tamaño manualmente */
+    border: 1px solid #ccc; /* Borde por defecto */
+    transition: border-color 0.3s; /* Transición para el cambio de color del borde */
+    box-sizing: border-box; /* Incluye el tamaño del borde en el ancho y alto total */
+    overflow-y: hidden; /* Oculta el desbordamiento vertical */
+  }
+  
+  /* Cambia el borde al hacer hover */
+  input, textarea:hover {
+    border: 1px solid #ccc;
+  }
+  
+  /* Ajusta dinámicamente la altura del textarea en función del contenido */
+  textarea {
+    height: auto;
+    transition: height 0.2s;
+  }
+  
+  input, textarea:focus {
+    outline: none; /* Quita el contorno al enfocar */
+  }
+  
+  /* Limita el tamaño máximo a 6 filas */
+  textarea[rows="6"] {
+    overflow-y: auto;
+  }
+  

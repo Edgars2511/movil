@@ -1,0 +1,36 @@
+<ion-content class="cont" [fullscreen]="true">
+<div class="cont">
+  <ion-grid>
+    <div class="header">
+
+    </div>
+    <button (click)="logout()" class="user"><ion-icon  name="exit-outline"></ion-icon></button>
+    
+    
+    <ion-title size="large">Hola {{ nombre_user }},</ion-title>
+    <!--ion-button class="login" href="/login">
+      <ion-icon aria-hidden="true" name="person"></ion-icon>
+    </ion-button--> 
+    
+    <ion-row>
+      <ion-col class="cont_notas" *ngFor="let item of resp">
+        <ion-card class="notas">
+        <!--
+          <ion-card-header>
+            <ion-card-title>{{ item.id }}</ion-card-title>
+            <ion-button (click)="item.id !== undefined && eliminarDato(item.id)" shape="round-10" fill="clear"> <ion-icon slot="icon-only"  name="trash-outline"></ion-icon></ion-button>
+          </ion-card-header>
+        -->
+          <ion-card-content class="contenido" (click)="item.id !== undefined && verNota(item.id)">
+            <!--ion-button (click)="item.id !== undefined && eliminarDato(item.id)" shape="round-10" fill="clear"> <ion-icon slot="icon-only"  name="trash-outline"></ion-icon></ion-button-->
+            <p class="titulo">{{ item.titulo }}</p>
+            <!--p class="cuerpo">{{ item.cuerpo }}</p-->
+            <div class="flecha"><ion-icon name="chevron-forward-outline"></ion-icon></div>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+</div>
+</ion-content>

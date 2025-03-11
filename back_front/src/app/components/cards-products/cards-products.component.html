@@ -1,0 +1,22 @@
+<div style="display: flex; justify-content: center; align-items: center;">
+  <div>
+    <ion-row>
+      <ion-col size-md="6">
+        <article class="card" *ngFor="let item of resp">
+          <div class="card-int">
+            <span class="card__span">{{ item.nombre_categoria }}</span>
+            <div class="img">
+              <img height="100%" width="auto" [src]="item.imagen_producto">
+            </div>
+            <div class="card-data">
+              <p class="title">{{ item.nombre_producto }}</p>
+              <p>Precio: ${{ item.precio_producto }}</p>
+              <button class="button">Mas informacion</button>
+              <button class="button" (click)="item.id_producto !== undefined && eliminarDato(item.id_producto)">Eliminar</button>
+            </div>
+          </div>
+        </article>
+      </ion-col>
+    </ion-row>
+  </div>
+</div>

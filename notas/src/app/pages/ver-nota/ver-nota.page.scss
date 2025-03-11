@@ -1,0 +1,82 @@
+/*ion-content {
+    border: 1px solid red;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}*/
+ion-title{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-size: 3.2rem;
+    //border: 1px solid red;
+    padding: 0;
+    font-weight: normal;
+    line-height: 4rem
+} 
+.cont {
+    background-color: #F6ECC9;
+    min-height: 100vh;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.cont_notas{
+    min-width: 100%;
+    padding: 0;
+}
+.cont_notas .notas{
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    box-shadow: none;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 1rem;
+}
+.cont_notas .notas .contenido .titulo{
+    font-size: 1.4rem;
+    font-weight: bolder;
+    color: black;
+}
+.cont_notas .notas .contenido .cuerpo{
+    font-size: 1.2rem;
+    color: black;
+}
+.cont_notas .notas .contenido .fecha{
+    font-size: 1rem;
+    color: rgb(94, 94, 94);
+}
+
+.cont .iconos{
+    padding-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.cont .iconos .back{
+    font-size: 1.8rem;
+    color: #000;
+}
+
+.cont .iconos .enviar{
+    font-size: 1.8rem;
+    color: #000;
+}
+
+ion-grid{
+    background: none;
+}
+ion-item{
+    background: none;
+}
+
+input{
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+textarea{
+    background: none;
+    border: none;
+    width: 100%;
+    font-size: 1.1rem;
+}

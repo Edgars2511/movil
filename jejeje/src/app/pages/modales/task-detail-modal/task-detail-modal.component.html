@@ -1,0 +1,7 @@
+<div class="cont">
+  <ion-grid *ngFor="let item of resp">
+    <input placeholder="Titulo" type="text" [(ngModel)]="updatedTitle">
+    <textarea placeholder="Cuerpo Hermana Cuerpo" type="text" [(ngModel)]="updatedCuerpo"></textarea>
+  </ion-grid>
+  <a (click)="updateTaskTitle()">Listo</a>
+</div>
